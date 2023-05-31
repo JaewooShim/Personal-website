@@ -1,0 +1,91 @@
+section::before, section::after {
+    display: block;
+    content: '';
+    height: 35px;
+}
+
+body {
+    font-family: 'Racing Sans One', cursive;
+}
+
+#aboutme {
+    padding-top: 100px;
+    padding-bottom: 5%;
+}
+
+.emphasis {
+    background: #BCD100;
+    background: linear-gradient(to right, #FFF240 0%, #40CF45 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display:block;
+    text-align:center;
+  }
+
+.portrait {
+    filter:drop-shadow(30px 10px 4px #4444dd);
+}
+
+.date {
+    color: #D96D20;
+}
+
+.container {
+    width: 80%;
+}
+
+.BS {
+    color: rgb(98, 98, 98);
+}
+
+.card-body {
+    flex-grow: 1;
+}
+
+.intro {
+    color: white;
+}
+
+.coursework {
+    background-color: #D96D20;
+}
+
+/* .card{
+    border-radius: 4px;
+    background: #fff;
+    box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+    transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+  cursor: pointer;
+}
+*/
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+} 
+
+.card {
+    animation: floating 5s ease-in-out infinite;
+  }
+  
+  @keyframes floating {
+    0% {
+      transform: translate(4px, -30px);
+    }
+    50% {
+        transform: translate(0px, 0px);
+    }
+    100% {
+        transform: translate(4px, -30px);
+    }
+}
+
+@media(max-width:768px) {
+    .card {
+        animation: none;
+    }
+}
+
+.lang {
+    width: 75px;
+    height: 75px;
+}
